@@ -1,0 +1,79 @@
+/*
+
+[COLOR SCHEME STYLES]
+
+Template: Nilam - Domain For Sell and Auction Template
+Author: ThemeAtelier
+Author URI: https://themeforest.net/user/themeatelier
+
+*/
+
+/* ------------------------------------
+    COLOR
+------------------------------------ */
+a,
+a:hover,
+a:focus,
+.header--box.style--1 .title .h2 span,
+.banner--content .title .h1,
+.faq--item .panel-title a,
+.faq--item .panel-heading .btn-link:hover,
+.header--title,
+.header--box.style--2 .icon,
+.header--box.style--2 .title .h5,
+.pricing--block {
+    color: #44dc46;
+}
+
+/* ------------------------------------
+    BACKGROUND COLOR
+------------------------------------ */
+.preloader--spinner:before,
+.preloader--spinner:after,
+.btn-primary,
+.header--box.style--1 .price,
+.header--form .btn,
+.banner--content .title .tag:before,
+.banner--content .sub-title:before,
+.banner--content .value .h3,
+.banner--content .value .h3:before,
+.banner--content .info .title:before,
+.banner--form .btn,
+.banner--popup > .btn,
+.feature--icon,
+.pricing--header,
+.pricing--action .btn,
+.service--item .icon,
+.service--item .action .btn {
+    background-color: #44dc46;
+}
+
+::-moz-selection {
+    background-color: #44dc46;
+}
+
+::selection {
+    background-color: #44dc46;
+}
+
+/* ------------------------------------
+    BORDER COLOR
+------------------------------------ */
+.btn-primary,
+.pricing--action .btn,
+.service--item .action .btn,
+.faq--items .title:before,
+.header--form form,
+.banner--form form,
+.faq--items {
+    border-color: #44dc46;
+}
+
+/* -------------------------------------------
+    Button Hover Background and border COLOR
+-------------------------------------------- */
+.pricing--action .btn:hover, 
+.pricing--action .btn:focus{
+    background-color: #3bbf3d;
+    border-color: #3bbf3d;
+}

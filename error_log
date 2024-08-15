@@ -1,0 +1,3 @@
+[13-Apr-2021 13:23:48 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/humarimama/public_html/storage/framework/views/7de5cb6d6adaff76bc488bbd9a78933cf0958940.php on line 102
+[13-Apr-2021 13:24:00 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/humarimama/public_html/storage/framework/views/7de5cb6d6adaff76bc488bbd9a78933cf0958940.php on line 102
+[13-Apr-2021 19:44:44 UTC] PHP Fatal error:  Can't use function return value in write context in /home/humarimama/public_html/storage/framework/views/b31912b6f04e373dc372fa603664dc355f7951d0.php on line 89

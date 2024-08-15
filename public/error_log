@@ -1,0 +1,9 @@
+[01-Feb-2021 14:31:42 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::contact_submit() in /home/humarimama/public_html/application/app/Http/Controllers/HomeController.php on line 84
+[06-Feb-2021 10:47:13 UTC] PHP Fatal error:  Cannot declare class App\Http\Controllers\BaseController because the name is already in use in /home/humarimama/public_html/application/app/Http/Controllers/Controller.php on line 13
+[11-Feb-2021 10:55:50 UTC] PHP Fatal error:  Cannot redeclare App\ProductReview::user() in /home/humarimama/public_html/application/app/ProductReview.php on line 32
+[11-Feb-2021 10:57:32 UTC] PHP Fatal error:  Cannot redeclare App\ProductReview::user() in /home/humarimama/public_html/application/app/ProductReview.php on line 32
+[11-Feb-2021 10:59:26 UTC] PHP Fatal error:  Cannot redeclare App\ProductReview::user() in /home/humarimama/public_html/application/app/ProductReview.php on line 32
+[11-Feb-2021 11:02:07 UTC] PHP Fatal error:  Cannot redeclare App\ProductReview::user() in /home/humarimama/public_html/application/app/ProductReview.php on line 32
+[11-Feb-2021 11:05:12 UTC] PHP Fatal error:  Cannot redeclare App\ProductReview::user() in /home/humarimama/public_html/application/app/ProductReview.php on line 32
+[07-Mar-2021 19:38:57 UTC] PHP Fatal error:  Cannot use App\Order as Order because the name is already in use in /home/humarimama/public_html/application/app/Http/Controllers/DashboardController.php on line 24
+[09-Mar-2021 19:38:01 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\HomeController::items() in /home/humarimama/public_html/application/app/Http/Controllers/HomeController.php on line 163

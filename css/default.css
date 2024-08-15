@@ -1,0 +1,50 @@
+
+html body{background-attachment:fixed;background-color:#e2e6e1;
+background-image:url(../images/bg.png);
+background-position:left top;background-repeat:repeat-x;font-family:"Trebuchet MS", Arial, sans-serif;margin:40px 60px 0}
+
+header{display:block;height:100px;margin:0 auto 26px auto;width:900px}
+
+a.logo{background:url(../images/logo.png) no-repeat 3px 22px;display:block;float:left;height:100px;width:330px}
+
+#tagline{color:#878787;float:left;font-size:11px;height:40px;line-height:40px;margin-top:30px;text-transform:uppercase;width:570px}
+#tagline p{float:left}
+
+span.bracket{color:#e0e0e0;display:block;font-family:Arial;font-size:40px;margin-top:-2px}
+span.left{float:left;margin-right:13px}
+span.right{float:right}
+span.highlight{color:#fa3a8d;font-weight:700}
+
+section{background:#6a7f93 url(../images/section_bg.png) repeat-x top left;border-bottom:2px solid #fff;border-right:2px solid #fff;clear:both;display:block;height:140px;margin:0 auto 26px auto;padding:20px 20px 20px 40px;width:840px}
+#titles{float:left;height:140px;width:430px}
+h1{color:#fff;font-size:75px;letter-spacing:-3px;margin-top:-7px}
+h2{clear:left;color:#ffd;font-size:35px;letter-spacing:-2px;margin-top:17px}
+form{color:#fff;display:block;float:right;font-size:12px;height:140px;width:390px}
+form *{float:left;margin-bottom:15px}
+label{margin-bottom:10px}span.highlight2{color:#ffd;float:none}
+#domain_box{-moz-box-shadow:1px 1px 25px #b9fcf8;-webkit-box-shadow:1px 1px 25px #b9fcf8;background:#f2f2f2 url(../images/input_bg.png) repeat-x top left;border:2px solid #999;box-shadow:1px 1px 25px #b9fcf8;color:#ccc;font-size:18px;height:24px;line-height:30px;padding:3px;width:382px}
+
+form a{background:url(../images/sprite.png) no-repeat 0 -206px;color:#fff;display:block;height:16px;margin-bottom:10px;padding:2px 0 0 21px;text-decoration:none}
+form a:hover{color:#ffd;text-decoration:none}
+
+#submit_button:hover{background-color:#fa3a8d}
+#submit_button {
+    background: url("../images/sprite.png") no-repeat scroll -135px -117px #76C7C2;
+    border: medium none;
+    border-radius: 12px 12px 12px 12px;
+    clear: left;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 5px 37px 5px 11px;
+}
+h4{color:#96cdcc}
+footer{display:block;clear:both;height:80px;margin:0 auto;width:900px}
+#social_networks{background-color:#ddd;color:#999;height:42px;line-height:42px;margin-bottom:13px;text-indent:20px;width:100%}
+footer a{border:none;color:#536477;display:block;float:left;font-size:11px;font-weight:700;height:12px;margin:13px 13px 0 0;text-decoration:none;text-transform:lowercase;text-shadow:0px 0px 1px #6FC}
+footer a:hover{color:#fa3a8d}
+footer span{float:left;margin-right:13px}
+#social_networks a{height:16px;width:16px}
+#social_networks a:hover{border:1px solid #fa3a8d}
+a.twitter{background:url(../images/sprite.png) no-repeat -22px -117px}
+a.facebook{background:url(../images/sprite.png) no-repeat 0 -117px}

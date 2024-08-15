@@ -1,0 +1,1223 @@
+/*
+
+[MAIN STYLES]
+
+Template: Nilam - Domain For Sell and Auction Template
+Author: ThemeAtelier
+Author URI: https://themeforest.net/user/themeatelier
+
+
+[NOTE]
+------
+PLEASE DO NOT EDIT THIS CSS FILE, YOU MAY NEED TO USE 'css/custom.css' FILE FOR WRITING YOUR CUSTOM CSS STYLES.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE 'css/custom.css' file.
+
+
+[TABLE OF CONTENTS]
+
+0. IMPORT GOOGLE FONTS
+
+1. GENERAL STYLES
+    1.1. LINKS
+    1.2. BUTTONS
+    1.3. PRELOADER
+
+2. UTILITY CLASSES
+    2.1. PADDINGS
+    2.2. BACKGROUND COLORS
+    2.3. BACKGROUND IMAGE
+    2.4. BACKGROUND OVERLAY
+    2.5. SECTION TITLE
+    2.6. VERTICAL CENTERING
+
+3. HEADER SECTION
+    3.1. HEADER TITLE
+    3.2. HEADER BOX
+    3.3. HEADER FORM
+
+4. BANNER SECTION
+    4.1. BANNER CONTENT
+    4.2. BANNER FORM
+    4.3. BANNER FAQ
+    4.4. BANNER POPUP
+
+5. FEATURES SECTION
+    5.1. FEATURE ITEM
+
+6. PRICING SECTION
+    6.1. PRICING BLOCK
+    6.2. PRICING ITEM
+
+7. CALL TO ACTION SECTION
+    7.1. CONTENT
+    7.2. BUTTON
+
+8. SERVICES SECTION
+    8.1. SERVICE ITEM
+
+9. FOOTER SECTION
+    9.1. FOOTER COPYRIGHT
+
+*/
+
+/*  ----------------------------------------------------
+0. IMPORT GOOGLE FONTS
+-------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i');
+
+/* ------------------------------------
+    1. GENERAL STYLES
+------------------------------------ */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #222;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight:700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #44dc46;
+}
+
+::selection {
+    color: #fff;
+    background-color: #44dc46;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.vc--parent {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.vc--child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* 1.1. LINKS */
+a {
+    color: #44dc46;
+    -webkit-transition: color .25s, background-color .25s ease-in-out, border-color .25s;
+    transition: color .25s, background-color .25s ease-in-out, border-color .25s;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #44dc46;
+    text-decoration: none;
+    outline: 0;
+}
+
+/* 1.3. PRELOADER */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+
+.preloader--spinner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: -20px auto 0;
+}
+
+.preloader--spinner:before,
+.preloader--spinner:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #44dc46;
+    border-radius: 50%;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    -webkit-animation: preloaderBounce 2.0s infinite ease-in-out;
+            animation: preloaderBounce 2.0s infinite ease-in-out;
+}
+
+.preloader--spinner:after {
+    -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+}
+
+@-webkit-keyframes preloaderBounce {
+    0%, 100% { -webkit-transform: scale(0.0); }
+    50% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes preloaderBounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/* 1.2. BUTTONS */
+.btn {
+    padding: 7px 30px;
+    border-radius: 0;
+    font-weight: 500;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition-timing-function: ease, ease, ease-in-out;
+            transition-timing-function: ease, ease, ease-in-out;
+}
+
+.btn.active,
+.btn:active {
+    box-shadow: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+}
+
+.btn-primary {
+    background-color: #44dc46;
+    border-color: #44dc46;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus {
+    background-color: #3bbf3d;
+    border-color: #3bbf3d;
+}
+
+.btn-white {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active:hover,
+.btn-white:active:focus {
+    color: #fff;
+    background-color: #3bbf3d;
+    border-color: #3bbf3d;
+}
+
+/* ------------------------------------
+    2. UTILITY CLASSES
+------------------------------------ */
+/* 2.1. PADDINGS */
+.pt--10 { padding-top: 10px; }
+.pt--20 { padding-top: 20px; }
+.pt--30 { padding-top: 30px; }
+.pt--40 { padding-top: 40px; }
+.pt--50 { padding-top: 50px; }
+.pt--60 { padding-top: 60px; }
+.pt--70 { padding-top: 70px; }
+.pt--80 { padding-top: 80px; }
+.pt--90 { padding-top: 90px; }
+.pt--100 { padding-top: 100px; }
+.pt--110 { padding-top: 110px; }
+.pt--120 { padding-top: 120px; }
+.pt--130 { padding-top: 130px; }
+
+.pb--10 { padding-bottom: 10px; }
+.pb--20 { padding-bottom: 20px; }
+.pb--30 { padding-bottom: 30px; }
+.pb--40 { padding-bottom: 40px; }
+.pb--50 { padding-bottom: 50px; }
+.pb--60 { padding-bottom: 60px; }
+.pb--70 { padding-bottom: 70px; }
+.pb--80 { padding-bottom: 80px; }
+.pb--90 { padding-bottom: 90px; }
+.pb--100 { padding-bottom: 100px; }
+.pb--110 { padding-bottom: 110px; }
+.pb--120 { padding-bottom: 120px; }
+.pb--130 { padding-bottom: 130px; }
+
+/* 2.2. BACKGROUND COLORS */
+.bg-c--dark {
+    color: #fff;
+    background-color: #02075d;
+}
+
+.bg-c--lightsmoke {
+    background-color: #f9f9f9;
+}
+
+/* 2.3. BACKGROUND IMAGE */
+.bg--img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg--parallax,
+.bg--parallax.bg--overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.bg--parallax img {
+    width: 100%;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+/* 2.4. BACKGROUND OVERLAY */
+.bg--overlay {
+    position: relative;
+    color: #fff;
+    z-index: 0;
+}
+
+.bg--overlay:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    z-index: -1;
+}
+
+.bg--overlay-fixed:before {
+    position: fixed;
+}
+
+/* 2.5. SECTION TITLE */
+.section--title {
+    margin-bottom: 60px;
+}
+
+.section--title .h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section--title p {
+    display: inline-block;
+    max-width: 650px;
+    margin-top: 14px;
+}
+
+/* 2.6. VERTICAL CENTERING */
+.vc--row > div {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.flex--vc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* ------------------------------------
+    3. HEADER SECTION
+------------------------------------ */
+/* 3.1. HEADER TITLE */
+.header--title {
+    color: #44dc46;
+}
+
+.header--title p {
+    margin-top: 3px;
+}
+
+.header--title .h2 {
+    margin: 0 0 4px;
+}
+
+.header--title p + .h2 {
+    margin-top: 17px;
+}
+
+/* 3.2. HEADER BOX */
+.header--box.style--1 {
+    position: relative;
+    padding: 45px 40px 50px;
+    color: #353535;
+    border: 2px solid rgba(255, 255, 255, 0.95);
+    z-index: 0;
+}
+
+.header--box.style--1:before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    opacity: 0.95;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    z-index: -1;
+}
+
+.header--box.style--1 .title .h2 {
+    margin: 0;
+}
+
+.header--box.style--1 .title .h2 span {
+    color: #44dc46;
+}
+
+.header--box.style--1 .features {
+    margin-top: 33px;
+}
+
+.header--box.style--1 .action {
+    margin-top: 37px;
+}
+
+.header--box.style--1 .price {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 7px 30px;
+    color: #fff;
+    background-color: #44dc46;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.header--box.style--1 .features .nav > li + li {
+    margin-top: 1px;
+}
+
+.header--box.style--1 .features .nav > li:before {
+    content: "\f046";
+    margin-right: 10px;
+    font-family: "FontAwesome";
+}
+
+.header--box.style--2 {
+    padding: 33px 30px 32px;
+    border: 1px solid #555;
+}
+
+.header--box.style--2 .icon {
+    color: #44dc46;
+    margin-bottom: 16px;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.header--box.style--2 .title .h5 {
+    margin: 0;
+    color: #44dc46;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.header--box.style--2 .content {
+    margin-top: 7px;
+    color: #858585;
+}
+.features li{
+    width:100%;
+}
+/* 3.3. HEADER FORM */
+.header--form form {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 30px 30px;
+    background-color: #fff;
+    border-top: 6px solid #44dc46;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header--form form.bd--0 {
+    border-width: 0;
+}
+
+.header--form .h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.header--form .status {
+    display: none;
+}
+
+.header--form .alert {
+    margin-bottom: 14px;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.header--form label {
+    display: block;
+    margin-bottom: 0;
+}
+
+.header--form label span {
+    display: block;
+    margin-bottom: 1px;
+    color: #303030;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.header--form .form-control {
+    height: 34px;
+    padding: 6px 15px;
+    border-color: #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+    text-overflow: ellipsis;
+}
+
+.header--form textarea.form-control {
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.header--form .btn {
+    position: relative;
+    padding: 6px 20px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #44dc46;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    -webkit-transition: color .25s, background-color .25s ease-in-out;
+    transition: color .25s, background-color .25s ease-in-out;
+    outline: 0;
+    z-index: 0;
+}
+
+.header--form .btn:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    z-index: -1;
+}
+
+.header--form .btn:hover:before {
+    opacity: 0.1;
+}
+
+.header--form .btn:focus {
+    outline: 0;
+}
+
+/* ------------------------------------
+    4. BANNER SECTION
+------------------------------------ */
+.banner--section {
+    height: 100%;
+}
+
+.banner--section.style--2,
+.banner--section.style--3 {
+    overflow: auto;
+}
+
+/* 4.1. BANNER CONTENT */
+.banner--content {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 130px 15px 80px;
+    overflow: auto;
+}
+
+.banner--content .container-fluid {
+    display: inline-block;
+    max-width: 550px;
+}
+
+.banner--content .title {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+.banner--content .title .h1 {
+    margin: -6px 0 0;
+    color: #44dc46;
+}
+
+.banner--content .title .tag {
+    position: absolute;
+    top: -30px;
+    left: -121px;
+    right: auto;
+    padding: 10px 15px;
+    background-color: #44dc46;
+    font-size: 18px;
+    line-height: 18px;
+    -webkit-transform: rotate(-52deg);
+            transform: rotate(-52deg);
+    z-index: 0;
+}
+
+.banner--content .title .tag:before {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #44dc46;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    z-index: -1;
+}
+
+.banner--content .title .tag span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.banner--content .sub-title {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 21px;
+    padding-bottom: 21px;
+    z-index: 0;
+}
+
+.banner--content .sub-title:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 80px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #44dc46;
+}
+
+.banner--content .sub-title .h1 {
+    margin: 0;
+}
+
+.banner--content .value .h3 {
+    display: inline-block;
+    position: relative;
+    margin: 10px 0 20px;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #44dc46;
+    line-height: 33px;
+    z-index: 0;
+}
+
+.banner--content .value .h3:before {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #44dc46;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    z-index: -1;
+}
+
+.banner--content .content {
+    color: #c7c7c7;
+}
+
+.bg--overlay .banner--content .content {
+    color: #fff;
+}
+
+.banner--content .info .title {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 19px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    z-index: 0;
+}
+
+.banner--content .info .title:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #44dc46;
+}
+
+.banner--content .info .fa {
+    margin-right: 8px;
+}
+
+/* 4.2. BANNER FORM */
+.banner--form {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 50px 15px;
+    overflow: auto;
+}
+
+.banner--form form {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 30px 30px;
+    background-color: #fff;
+    border-top: 6px solid #44dc46;
+}
+
+.banner--form .status {
+    display: none;
+}
+
+.banner--form .alert {
+    margin-bottom: 14px;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+.banner--form label {
+    display: block;
+    margin-bottom: 0;
+}
+
+.banner--form label span {
+    display: block;
+    margin-bottom: 1px;
+    color: #303030;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.banner--form .form-control {
+    height: 34px;
+    padding: 6px 15px;
+    border-color: #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+    text-overflow: ellipsis;
+}
+
+.banner--form textarea.form-control {
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.banner--form .btn {
+    position: relative;
+    padding: 6px 20px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #44dc46;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    -webkit-transition: color .25s, background-color .25s ease-in-out;
+    transition: color .25s, background-color .25s ease-in-out;
+    outline: 0;
+    z-index: 0;
+}
+
+.banner--form .btn:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    z-index: -1;
+}
+
+.banner--form .btn:hover:before {
+    opacity: 0.1;
+}
+
+.banner--form .btn:focus {
+    outline: 0;
+}
+
+/* 4.3. BANNER FAQ */
+.banner--faq {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 50px 15px;
+    overflow: auto;
+}
+
+.faq--items {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 30px 45px;
+    color: #222;
+    background-color: #fff;
+    border-top: 6px solid #44dc46;
+}
+
+.faq--items .title {
+    position: relative;
+    margin: 0 0 35px;
+    padding-bottom: 10px;
+    z-index: 0;
+}
+
+.faq--items .title:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 50px;
+    border-bottom: 2px solid #44dc46;
+}
+
+.faq--item {
+    margin-bottom: 0;
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-color: #f0f0f0;
+    box-shadow: none;
+}
+
+.faq--items .faq--item {
+    border-radius: 0;
+}
+
+.faq--item .panel-heading {
+    position: relative;
+    padding: 0 20px 0 0;
+    z-index: 0;
+}
+
+.faq--item .panel-title a {
+    display: inline-block;
+    padding-bottom: 8px;
+    color: #44dc46;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    word-break: break-all;
+}
+
+.faq--item .panel-title a.collapsed {
+    color: #222;
+}
+
+.faq--item .panel-heading + .panel-collapse > .panel-body {
+    padding: 0 0 16px;
+    border-width: 0;
+}
+
+.faq--item .panel-heading .btn-link {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+    color: #222;
+    font-size: 18px;
+    line-height: 30px;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+
+.faq--item .panel-heading .btn-link:hover {
+    color: #44dc46;
+}
+
+/* 4.4. BANNER POPUP */
+.banner--popup > .btn {
+    display: block;
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    margin: 0 auto;
+    padding: 8px 0 6px;
+    color: #fff;
+    background-color: #44dc46;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-size: 24px;
+    line-height: 34px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: box-shadow .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    transition: box-shadow .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+    transition: transform .25s ease-in-out, box-shadow .25s ease-in-out, -webkit-transform .25s ease-in-out;
+    z-index: 999;
+}
+
+.banner--popup > .btn.collapsed {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.banner--popup .banner--form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner--popup .banner--form form {
+    margin: 5px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    -webkit-transition-duration: 1.55s;
+            transition-duration: 1.55s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+}
+
+/* ------------------------------------
+    5. FEATURES SECTION
+------------------------------------ */
+.features--section {
+    padding: 80px 0 20px;
+}
+
+/* 5.1. FEATURE ITEM */
+.feature--item {
+    margin-bottom: 60px;
+    padding: 40px 15px 32px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.feature--icon {
+    display: inline-block;
+    width: 100%;
+    max-width: 70px;
+    margin-bottom: 22px;
+    color: #fff;
+    background-color: #44dc46;
+    font-size: 34px;
+    line-height: 65px;
+}
+
+.feature--title .h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.feature--desc {
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+/* ------------------------------------
+    6. PRICING SECTION
+------------------------------------ */
+.pricing--section {
+    padding: 80px 0 20px;
+    background-color: #f4f5f6;
+}
+
+/* 6.1. PRICING BLOCK */
+.pricing--block {
+    color: #44dc46;
+    max-width: 360px;
+    padding: 36px 30px 33px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing--block .h3 {
+    margin: 0;
+}
+
+.pricing--block .h4 {
+    margin: 23px 0 0;
+}
+
+.pricing--block .h1 {
+    margin: 20px 0 0;
+}
+
+/* 6.2. PRICING ITEM */
+.pricing--item {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.pricing--item.bg-c--dark {
+    background-color: #303030;
+}
+
+.pricing--header {
+    padding: 16px 0 15px;
+    color: #fff;
+    background-color: #44dc46;
+    text-transform: uppercase;
+}
+
+.pricing--header .h3 {
+    margin: 0;
+}
+
+.pricing--price .h1 {
+    margin: 23px 0 18px;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.pricing--price .h1 sup {
+    top: -.25em;
+}
+
+.pricing--features {
+    color: #999;
+}
+
+.pricing--features .nav li + li {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+}
+.pricing--features .nav li{
+    width:100%;
+}
+.pricing--action {
+    margin-top: 22px;
+}
+
+.pricing--action .btn {
+    padding: 4px 30px;
+    color: #fff;
+    background-color: #44dc46;
+    border-color: #44dc46;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 26px;
+    -webkit-transition: color .25s, background-color .25s ease-in-out, border-color .25s;
+    transition: color .25s, background-color .25s ease-in-out, border-color .25s;
+}
+
+.pricing--action .btn:hover,
+.pricing--action .btn:focus {
+    color: #fff;
+    background-color: #3bbf3d;
+    border-color: #3bbf3d;
+}
+
+/* ------------------------------------
+    8. SERVICES SECTION
+------------------------------------ */
+.services--section {
+    padding: 80px 0 20px;
+}
+
+/* 8.1. SERVICE ITEM */
+.service--item {
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    -webkit-transition: box-shadow .25s ease-in-out;
+    transition: box-shadow .25s ease-in-out;
+}
+
+.service--item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service--item .icon {
+    width: 50px;
+    margin-bottom: 22px;
+    color: #fff;
+    background-color: #44dc46;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.service--item.text-center .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service--item .title .h3 {
+    margin: 0 0 15px;
+}
+
+.service--item .action {
+    margin-top: 22px;
+}
+
+.service--item .action .btn {
+    padding: 4px 20px;
+    background-color: #44dc46;
+    border-color: #44dc46;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 26px;
+    -webkit-transition: border-color .25s, background-color .25s ease-in-out;
+    transition: border-color .25s, background-color .25s ease-in-out;
+}
+
+.service--item .action .btn:hover {
+    background-color: #3bbf3d;
+    border-color: #3bbf3d;
+}
+
+/* ------------------------------------
+    9. FOOTER SECTION
+------------------------------------ */
+/* 9.1. FOOTER COPYRIGHT */
+.footer--copyright {
+    padding: 18px 0;
+    color: #fff;
+    background-color: #081228;
+}
+
+/* ------------------------------------
+    7. CALL TO ACTION SECTION
+------------------------------------ */
+.cta--section {
+    position: relative;
+    padding: 50px 0 42px;
+    color: #888;
+    background-color: #2b2c31;
+    z-index: 0;
+}
+
+.cta--section > .container {
+    position: relative;
+    z-index: 0;
+}
+
+/* 7.1. CONTENT */
+.cta--content {
+    margin-right: 193px;
+    color: #ececec;
+    overflow: hidden;
+}
+
+.cta--content .h3 {
+    margin: 8px 0;
+    color: #fff;
+}
+
+/* 7.2. BUTTON */
+.cta--btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -40px;
+    margin-left: 30px;
+    color: #ececec;
+}
+
+.cta--btn a + p {
+    margin-top: 8px;
+}
+
+.cta--btn .btn {
+    padding: 13px 30px 11px;
+}

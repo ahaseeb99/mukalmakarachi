@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../min_version/ipages.min.css">
+	<!-- /end css -->
+</head>
+<body>
+<p>This is just a simple example to show you how the plugin works with PDF</p>
+
+<!-- flipbook markup -->
+<div id="flipbook" style="height:300px;" data-book-engine="onepageswipe" ></div>
+<!-- /end flipbook markup -->
+
+<!-- scripts-section -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../min_version/pdf.min.js"></script>
+<script type="text/javascript" src="../min_version/jquery.ipages.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	var options = {
+		responsive:true,
+		autoFit:true,
+		autoHeight: false,
+		bookmarks: [],
+		padding:{
+			top:30,
+			left:10,
+			right:10,
+			bottom:70
+		},
+		pdfUrl: 'assets/pdf/magazine.pdf',
+		pdfAutoCreatePages: true,
+		pdfBookSizeFromDocument: true,
+		zoom:1,
+		toolbarControls: [
+			{type:'share',        active:false},
+			{type:'sound',        active:true, optional: false},
+			{type:'outline',      active:true},
+			{type:'thumbnails',   active:false},
+			{type:'gotofirst',    active:false},
+			{type:'prev',         active:true},
+			{type:'pagenumber',   active:true},
+			{type:'next',         active:true},
+			{type:'gotolast',     active:false},
+			{type:'zoom-in',      active:false},
+			{type:'zoom-out',     active:false},
+			{type:'zoom-default', active:false},
+			{type:'optional',     active:false},
+			{type:'download',     active:false, optional: false},
+			{type:'fullscreen',   active:true, optional: false},
+		],
+	};
+	
+
+	$('#flipbook').ipages(options);
+	
+
+	// Events
+	$('#flipbook').on('ipages:ready', function(e, plugin) {	
+		console.log('event:ready');
+
+
+			//$('.ipgs-pagenumber-label').hide();
+			$('.ipgs-pagenumber-label').on('DOMSubtreeModified',function(){
+				let currenttext = $(this).text();
+				if(currenttext != ''){
+					let result = currenttext.charAt(currenttext.length1);
+
+					if(result > 6){
+						alert(result);
+					}
+
+				}
+			});
+				
+				
+			$('.ipgs-book:eq(0)').children().each(function(idx, li) {
+				if(idx > 5){
+					$(this).remove();
+				}
+			});
+
+	});
+	
+
+
+
+
+		// $('#flipbook').on('ipages:showpage', function(e, plugin, page) {
+		//     //console.log('event:showpage [' + page + ']');
+		// 	//console.log(page);
+		// });
+		
+		// $('#flipbook').on('ipages:hidepage', function(e, plugin, page) {
+		//      //console.log('event:hidepage [' + page + ']');
+		// });
+
+
+});
+
+</script>
+
+</body>
+</html>
